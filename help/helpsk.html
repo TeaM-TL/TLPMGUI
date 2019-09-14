@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TeX Live 2007</title>
+<meta http-equiv=Content-type CONTENT="text/html; charset=utf-8">
+</head>
+.font Helvetica
+.fontsize 10
+.forecolor black
+.backcolor #ffffd2
+.linkcolor #006800
+.buttons "back forw sep stop sep index sep find search sep inc dec"
+topic contents
+.h_topics .*
+.h_ignore <h4.*
+<body>
+<h2>1. Instalace TeX Live</h2>
+Po vložení CD TeX Live CD do mechaniky CD-ROM, by měl autostart aktivovat program tlpmgui. Když tomu tak není, klikněte na Start, potom Spustit, potom napište &lt;písmeno mechaniky&gt;:\setup-win32\tplmgui.exe, (nebo &lt;písmeno mechaniky&gt;:\texlive\setup-win32\tplmgui.exe když instalujete TeX z DVD TeX Collection), kde &lt;písmeno mechaniky&gt; je označení mechaniky s CD TeX Live (nebo s DVD TeX Collection), potom klikněte OK.<br><br>
+Má se otevřít instalační okno nazvané "Instalace TeX Live a podpůrných nástrojů/TeX Live installation and maintenance utility". Obsahuje následující oddíly: "Hlavní nastavení/Main customization", "Instalace/Install", "Zvolte schéma/Select a scheme", "Zvolte systém/Select systems", "Adresáře/Directories" a "Volby/Options".<br><br>
+V oddílu "Adresáře" se tlačítkem "CD/DVD" má zobrazit instalační mechanika (adresář) (např., "F:/" nebo "F:/texlive/" pro DVD), když tomu tak není, tak klikněte na tlačítko "CD/DVD" a zvolte CD/DVD mechaniku, v které se nachází CD TeX Live (nebo DVD TeX Collection).<br><br>
+Adresář, do kterého chcete nainstalovat software, se dá nastavit kliknutím na tlačítko "TLroot". Tento adresář bude na další použití nastavený jako proměnná prostředí TLroot. Proměnné prostředí TEXMFTEMP a TEXMFCNF, které se zobrazují tlačítky "TEXMFTEMP" a "TEXMFCNF", budou automaticky nastavené po dobu instalace, ale nyní mohou byt ručně přizpůsobené kvůli zvláštním potřebám.<br><br>
+V oddílu "Zvolte schéma" je potřebné kliknutím na přepínač označený názvem instalační schéma (např. "scheme-gust") zvolit požadované instalační schéma Tex Live. Ke každému schéma je přiřazeno tlačítko "Informace", zobrazující po kliknutí stručný popis odpovídajícího schéma.<br><br> 
+Schéma je rozsáhlý komplex souborů určených na různé druhy použití. K dispozici jsou všeobecná schéma pro základní/basic, střední/medium a úplnou/full instalaci. Ostatní schéma jsou buď určená pro jednotlivá sdružení uživatelů (např., co nabízí GUST nebo GUTenberg svým členům) nebo jsou aplikačně zaměřená (např. na spolupráci XML a TeXu). Předvolená schéma mohou být doplněna. To se vykoná v oddílu "Hlavní nastavení" volbou doplňkových kolekcí z nabídek "Standardní výběr/Standard collections" nebo "Výběr jazyků/Language collections". Například, kliknutím na tlačítko  "Zvol/Select" označené "Standardní výběr" nebo "Výběr jazyků" v oddílu "Hlavní nastavení" je možné vyznačit doplňkové kolekce, jako například dokumentaci v různých jazycích, Metapost nebo systém Omega.
+
+<h4>POZNÁMKA:</h4>
+Kolekce "Ghostscript", "Perl" a "Wintools" jsou implicitně zvolené a musí být nainstalované, pokud je ještě nainstalované nemáte a jste si vědom(á) toho, co děláte. Je to proto, že tyto programy jsou požadované mnohými důležitými nástroji. Budou také nastavené Proměnné prostředí PERL5LIB a GS_LIB.<br><br>
+Dále se kliknutím na tlačítko "Zvol" označené  "Výběr jazyků" v oddílu "Hlavní nastavení" otevře okno "Výběr jazyků", v kterém můžete zvolit jazyk instalace označením okénka u jazyka.<br><br>
+Dále spustíte odpovídající proces instalace kliknutím na tlačítko "Nainstaluj" v oddílu "Nainstaluj". Počkejte, až dokud neuvidíte oznámení o úspěšném ukončení instalace..<br><br>
+Odkaz na program tlpmgui bude přidaný do menu Start->Programy->TeXLive2007.<br><br>
+Když je to potřebné (Win9x/WinME), budete požádán(a) restartovat počítač.
+
+<h2>2. Spuštění z DVD</h2>
+
+Další položka "Run from DVD/Spuštění z DVD" se ukáže v případě DVD verze TeX Live. Zde lze nakonfigurovat spouštění přímo z DVD. Kliknutím na "Setup/Nastavení" tlpmgui nastaví proměnné prostředí a vytvoří formátové soubory na lokálním disku.<br><br> 
+Jelikož tím je TeX live nastaven, příště by mělo stačit vložit DVD disk do mechaniky DVD.
+ 
+<h2>3. Údržba instalace TeX Live</h2>
+Když už máte nainstalovaný TeX Live, můžete program tlpmgui použít spolu s CD TeX Live CD/DVD TeX Collection na modifikaci a údržbu vaší instalace..<br><br>
+Protože je odkaz na tlpmgui umístěný v menu Start->Programy->TeXLive2007, spusťte ho odtud. Ukáže se okno údržby s názvem "Instalace TeX Live a podpůrných nástrojů". Obsahuje různé položky: "Přidej balíky/Add Packages", "Odstraň balíky/Remove packages", "Správa instalace/Manage installation", "Odstraň instalaci/Remove installation".
+
+<h3>3.1. "Přidej balíky" nebo "Odstraň balíky"</h3>
+Kliknutím na položku označenou "Přidej balíky" nebo "Odstraň balíky" zvolte odpovídající funkci a potom:
+<b>1.</b>Klikněte na tlačítko "Hledej/Search" v oddílu "Tlačítka/Buttons". Zobrazí se oddíl "Zvolte balíky .../Select packages to..." ze seznamem balíků, které se mají instalovat nebo odstranit. Po přidaní balíků se porovná seznam nainstalovaných balíků se seznamem nabízeným na Vašem CD/DVD. Zobrazí se jen balíky, které ještě nejsou nainstalované. Je na Vás zvolit si balíky, které chcete nainstalovat.<br><br>
+Při odstraňovaní jednotlivých balíků bude zobrazený jen seznam nainstalovaných balíků.<br><br>
+Uvědomte si, prosím, že před spuštěním obou činností "Přidej balíky" a "Odstraň balíky" se nejprve zobrazí seznamy kolekcí.<br><br>
+<b>2.</b> Zvolte balík kliknutím na název balíku. Označené balíky jsou vysvícené. Kliknutím na tlačítko "Informace" v oddílu "Tlačítka" se v okně umístěném v oddílu "Informace o zvolené položce/Info on the selected item" zobrazí stručný popis zvolených balíků. Na současné označeni vícerých balíků podržte stlačený jeden z kláves Ctrl nebo Shift, kým držíte stisknuté levé tlačítko myši nebo posuňte ukazovatel myši při stisknutém levém tlačítku.<br><br>
+<b>3.</b> Klikněte na tlačítko "Nainstaluj" nebo "Odstraň" v oddílu "Tlačítka" na vykonání vhodné činnosti.
+
+<h3>3.2. "Správa instalace"</h3>
+Funkce dostupné v položce označeném "Správa instalace" jsou užitečné na vykonání potřebných činností, když chcete přidat podporu jazyka, který nebyl zvolen při instalaci nebo přidaní/znovu vygenerovaní formátu, který nebyl vyznačený při instalaci nebo byl pozměněný po instalaci.
+Je možné vykonat následující činnosti:<br>
+- Obnoveni databáze ls-R<br>
+- Vytvoření formátů (všech nebo chybějících/All or Missing)<br>
+- Editaci soboru language.dat<br>
+- Editaci soboru fmtutil.cnf<br>
+- Editaci soboru updmap.cfg<br><br>
+Poznámka: tlačítkem "Zruš/Cancel" nebo "Hotovo/Done" můžete zavřít okno Edit...; stisknutí "Hotovo" spustí obnoveni souborů formátů (nebo mapovacích (fontmap) souborů když jste editovali sobor updmap.cfg) a následně se obnoví sobory databáze ls-R.
+
+<h3>3.3."Odstraň instalaci TeX Live"</h3>
+Položka označená "Odstraň instalaci TeX Live/Remove the TeX Live installation" otevře okno, obsahující funkci, která nemá smysl popisovat a nevíme, kdo by ji mohl potřebovat a na co slouží ... :-)
+
+<h4>Poznámka</h4>
+V každém případě, na svoje lokální doplňky máte adresář texmf-local, odstraňovací procedura ho nevyčistí a nevymaže věci, které jsou v něm, pokud si volbu nezaškrtnete explicitně. Instalační adresář setuptl obsahující program tlpmgui a příslušné sobory také nebude smazán. Pro skutečné odstranění musíte vykonat jistou ruční očistu.<br>
+
+<h2>4. Odkazy</h2>
+Více na <a href="http://www.tug.org/texlive/doc/texlive-cz/live.html">webu</a>
+
+<h2>5 Parametry běhu</h2>
+Implicitně, tlpmgui zkouší detekovat instalaci TeXu a v závislosti na tom startuje buď v instalačním módu nebo módu správy.<br>
+<tt>--install-mode</tt>&nbsp;&nbsp;&nbsp;vynutí instalační mód.<br><br>
+Diagnostické informace jsou ukládány do logovacího souboru, který je na konci běhu programu smazán, společně s dalšími pomocnými soubory.<br>
+<tt>--debug</tt>&nbsp;&nbsp;&nbsp;zobrazuje názvy a obsah všech pomocných souborů tlpmgui v samostatném okně.
+
+<h2>6. Changes</h2>
+2005.10.02 GG, TLu<br>
+2005.10.06 20:00 StaW<br>
+2005.10.07 00:50 JBL<br>
+2005.10.09 12:30 JBL<br>
+2005.10.11 21:55 TLu<br>
+2005.10.27 01:40 StaW<br>
+2005.10.30 11:30 JBu (translation)<br>
+2005.10.31 11:45 TLu - html<br>
+2007.02.06 22:45 PeS (2007 CZ translation)
+$Id: helpsk.html 345 2007-02-05 22:10:33Z tlu $
+</body>
+</html>

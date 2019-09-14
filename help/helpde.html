@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TeX Live 2007</title>
+<meta http-equiv=Content-type CONTENT="text/html; charset=utf-8">
+</head>
+.font Helvetica
+.fontsize 10
+.forecolor black
+.backcolor #ffffd2
+.linkcolor #006800
+.buttons "back forw sep stop sep index sep find search sep inc dec"
+.h_topics .*
+.h_ignore <h4.*
+<body>
+<h2>1. Installation</h2>
+Nachdem Sie die TeX Live CD in das CD-ROM Laufwerk eingelegt haben, sollte das Installationsprogramm tlpmgui automatisch starten. Falls dies nicht erfolgt, klicken Sie Start, dann Ausführen, dann geben Sie &lt;Laufwerk&gt;:\setup-win32\tplmgui.exe ein (oder, falls Sie von der TeX Collection DVD installieren, &lt;Laufwerk&gt;:\texlive\setup-win32\tplmgui.exe), wobei &lt;Laufwerk&gt; der Laufwerksbuchstabe der TeX Live CD oder TeX Collection DVD ist. Anschließend klicken Sie OK.<br><br>
+Das Installationsfenster "TeX Live Installations- und Wartungsprogramm" sollte sich nun öffnen. Es ist in die folgenden Bereiche aufgeteilt: "Anpassung", "Installieren", "Schema auswählen", "System auswählen", und "Verzeichnisse".<br><br>
+Im Bereich "Verzeichnisse" sollte nun das Installations-Quelllaufwerk beim "CD/DVD" Knopf angezeigt werden (z. B. "F:/", oder "F:/texlive/" für the DVD). Falls dies nicht so ist, klicken Sie auf den "CD/DVD" Knopf und wählen das CD/DVD Laufwerk mit der TeX Live CD oder TeX Collection DVD aus.<br><br>
+Das Ziellaufwerk, in dem Sie die Programme installieren möchten, können Sie durch Anklicken des "TLroot" Knopfes auswählen. Dieses Verzeichnis wird als TLroot Umgebungsvariable für weitere Verwendung gespeichert. Die TEXMFTEMP und TEXMFCNF Umgebungsvariablen, welche bei den "TEXMFTEMP" und "TEXMFCNF" Knöpfen gezeigt werden, werden bei der Installation automatisch angepaßt. Diese Anpassung können Sie aber auch manuell vornehmen.<br><br>
+Im Bereich "Schema auswählen" können Sie das gewünschte TeX Live Installationsschema wählen, indem Sie den Radio-Knopf mit dem Namen des Installationsschemas (z. B. "scheme-gust") anklicken. Zu jedem Schema gibt es einen "Info" Knopf, der beim Anklicken eine Kurzbeschreibung des entsprechenden Schemas liefert.<br><br>
+Durch Anklicken des "Auswählen" Knopfes beim Feld "Standard-Kollektionen" im Bereich "Anpassung" können Sie zusätzliche Kollektionen zur Installation auswählen, wie z. B. Dokumentation in verschiedenen Sprachen, Metapost, oder Omega.
+
+<h4>Anmerkung:</h4>
+ Die "Ghostscript", "Perl", und "Wintools" Kollektionen sind standardmäßig ausgewählt und sollten immer mitinstalliert werden, sofern sie es nicht bereits sind. Diese Installationen sollten Sie nur ändern, wenn Sie genau wissen, was Sie tun. Der Grund hierfür ist, daß diese Pakete von vielen wichtigen Programmen benötigt werden. Weiterhin werden hier die Umgebungsvariablen PERL5LIB and GS_LIB gesetzt.<br><br>
+Als weiteren Schritt können Sie nach Anklicken des "Auswählen" Knopfes beim Feld "Sprach-Kollektionen" die gewünschte Sprache für die Installation durch Anklicken des Knopfes neben der Sprache auswählen.<br><br>
+Durch Anklicken des "Installieren" Knopfes können Sie dann den eigentlichen Installationsvorgang starten. Bitte warten Sie, bis die Meldung zum erfolgreichen Abschluß der Installation erscheint.<br><br>
+Die Kurzanwahl für das Programm tlpmgui wird automatisch dem Start->Programme->TeXLive2007 Menü hinzugefügt.<br><br>
+Falls erforderlich, werden Sie zum Schluß gebeten, Ihren Rechner neu zu starten.
+
+<h2>2. Von DVD ausführen</h2>
+Ein zusätzliches Feld "Von DVD ausführen" erscheint, falls das Programm tlpmgui von der TeX Live DVD aus gestartet wird. Sie können jetzt das System für "Live" Betrieb konfigurieren, so daß es direkt von der DVD aus lauffähig ist.<br><br>
+Durch Anklicken des "Einstellung" Knopfes setzt tlpmgui die Umgebungsvariablen und erzeugt alle Formate auf der lokalen Festplatte. TeX Live ist nun fertig zum Betrieb --- sofern sich auch die DVD im Laufwerk befindet.
+
+<h2>3. Wartung der Installation</h2>
+Sobald Sie TeX Live installiert haben, können Sie das tlpmgui Programm zusammen mit der TeX Live CD oder TeX Collection DVD benutzen, um Ihre Installation abzuändern oder zu warten.<br><br>
+Das Programm tlpmgui können Sie am einfachsten über die Kurzanwahl Start->Programme->TeXLive2007 starten, worauf das Wartungsfenster mit dem Titel "TeX Live Installations- und Wartungsprogramm" erscheint. Es enthält die Felder "Pakete hinzufügen", "Pakete entfernen", "Installation bearbeiten", und "Installation entfernen".
+
+<h3>3.1. Pakete hinzufügen oder Pakete entfernen</h3>
+ Klicken Sie auf das Feld "Pakete hinzufügen" oder "Pakete entfernen" zur Auswahl der gewünschten Funktion, und dann:
+<b>1.</b> Klicken Sie auf den "Suchen" Knopf im "Funktion" Bereich, um die Liste der zu erneuernden oder zu entfernenden Pakete im "Auswahl der ... Pakete" Feld anzuzeigen oder aufzufrischen. Beim Hinzufügen von Paketen wird die Liste der installierten Pakete mit der Liste der auf der CD/DVD verfügbaren Pakete verglichen. Es werden nur Pakete angezeigt, die nicht bereits installiert sind. Treffen Sie jetzt Ihre Wahl, welche Pakete Sie installieren möchten.<br><br>
+Beim Entfernen einzelner Pakete wird nur die Liste der installierten Pakete angezeigt.<br><br>
+Sowohl für "Pakete hinzufügen" also auch "Pakete entfernen" werden zuerst die Kollektionen gelistet.<br><br>
+<b>3.</b> Wählen Sie ein Paket aus durch Anklicken seines Namens. Die Namen der ausgewählten Pakete sind hervorgehoben. Durch Anklicken des "Info" Knopfes im "Funktion" Bereich erscheint eine kurze Beschreibung des ausgewählten Pakets im Fenster "Info zu ausgewählten Paketen". Um mehrere Pakete auf einmal auszuwählen, halten Sie die Strg oder Shift-Taste gedrückt, während Sie die linke Maustaste auf dem betreffenden Paketnamen klicken, oder Sie ziehen den Mauszeiger über die zu selektierenden Paketnamen, wobei Sie die linke Maustaste gedrückt halten.<br><br>
+<b>2.</b> Klicken Sie auf den "Installieren" oder "Entfernen" Knopf, um die entsprechende Aktion durchzuführen.
+
+<h3>3.2. Installation bearbeiten</h3>
+Die im Feld "Installation bearbeiten" verfügbaren Funktionen helfen Ihnen, falls Sie eine Sprache hinzufügen wollen, die während der Installation nicht selektiert war, falls Sie ein Format hinzufügen oder regenerieren wollen, das ebenfalls während der Installation nicht angewählt war oder zwischenzeitlich verändert wurde, oder falls Sie das Font Mapping ändern wollen.<br><br>
+Hier können Sie die folgenden Funktionen wählen:<br>
+- Auffrischen der ls-R Datenbasis<br>
+- Formate erzeugen -- alle, oder nur fehlende<br>
+- Editiere language.dat (Sprachen)<br>
+- Editiere fmtutil.cnf (Formate)<br>
+- Editiere updmap.cfg (Font Mapping)<br>
+<h4>Anmerkung:</h4>
+Sie können das "Editiere..." Fenster durch Anklicken des "Abbrechen" oder "Fertig" Knopfes schließen; letzteres startet das automatische Erzeugen der Format-Dateien (bzw. Font Mapping Dateien, falls Sie die Funktion "Editiere updmap.cfg" gewählt hatten), gefolgt vom Auffrischen der ls-R Datenbasis.
+
+<h3>3.3. Entfernen der TeX Live Installation</h3>
+Durch Anklicken des Knopfes "Entfernen der TeX Live Installation" öffnet sich ein spezielles Fenster, das auch hierfür die erforderliche Funktion enthält -- die zu beschreiben an dieser Stelle müßig ist, denn: wer wollte das schon tun? :-)<br><br>
+Wie dem auch sei, ein spezielles texmf-local Verzeichnis mit Ihren eigenen Hinzufügungen wird von der Prozedur zum Entfernen nicht beeinträchtigt. Auch das setup-win32 Verzeichnis, welches tlpmgui und seine Hilfsdateien enthält, wird nicht gelöscht.<br>
+
+<h2>4. Links</h2>
+Weitere Info zu <a href="http://www.tug.org/texlive/doc/texlive-ge/live.html">TeX Live</a> im Internet.<br>
+
+<h2>5. Laufzeit-Parameter</h2>
+Standardmäßig versucht das Programm tlpmgui zu erkennen, ob bereits ein TeX System installiert ist; falls nein, wird der Installations-, sonst der Wartungsmodus gestartet.<br>
+Die Kommandozeilen-Option <tt>--install-mode</tt> erzwingt den Installationsmodus.<br><br>
+Diagnostik-Information wird in einer Log-Datei gesammelt, die am Ende des Programmlaufs gelöscht wird; gleiches gilt für weitere durch tlpmgui erzeugte temporäre Dateien.<br>
+Die Kommandozeilen-Option <tt>--debug</tt> zeigt die Namen und Inhalte aller temporären Dateien von tlpmgui in einem separaten Fenster an.
+
+<h2>6. Änderungen</h2>
+2005.10.06 20:00 StaW<br>
+2005.10.07 00:50 JBL<br>
+2005.10.27 01:39 StaW<br>
+2005.10.29 19:55 TLu - html<br>
+2005.11.01  0:35 HaHe<br>
+2007.02.04 22:00 HaHe<br>
+$Id: helpde.html 342 2007-02-04 21:15:52Z tlu $
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TeX Live 2007</title>
+<meta http-equiv=Content-type CONTENT="text/html; charset=utf-8">
+</head>
+.font Helvetica
+.fontsize 10
+.forecolor black
+.backcolor #ffffd2
+.linkcolor #006800
+.buttons "back forw sep stop sep index sep find search sep inc dec"
+topic contents
+.h_topics .*
+.h_ignore <h4.*
+<body>
+<h2>1 The TeX Live installation process</h2>
+After inserting the TeX Live CD into the CD-ROM drive, autostart should activate tlpmgui. If it does not, click Start, then Run, then type &lt;drive letter&gt;:\setuptl\tplmgui.exe, (or &lt;drive letter&gt;:\texlive\setuptl\tplmgui.exe if you are installing from the TeX Collection DVD) where &lt;drive letter&gt; is the drive letter with the TeX Live CD (or TeX Collection DVD), and then click OK.<br><br>
+The installation window titled "TeX Live installation and maintenance utility" should open. It contains the following sections: "Main customization", "Install", "Select a scheme", "Select a system", "Directories" and "Options".<br><br>
+In the "Directories" section the installation drive (directory) next to the  "CD/DVD" button should be displayed (e.g., "F:/", or "F:/texlive/" for the DVD), but if it is not, then click the "CD/DVD" button and select the CD drive with the TeX Live CD (or the "texlive" directory for the TeX Collection DVD).<br><br>
+The directory in which you wish to install the software can be set by clicking the "TLroot" button. This directory will be set as TLroot environment variable for later use.<br><br>
+In the "Select a scheme" section the desired Tex Live installation scheme should be chosen  by clicking the radio button labelled with the installation scheme name (e.g., "scheme-gust"). Each scheme is accompanied by an "Info" button which, when clicked, diplays a short description of the relevant scheme.<br><br>
+A scheme is a large set of files targeted at some kind of usage. There are generic schemes for basic, medium and full installations.  The remaining ones are either targeted  at certain LUGs (i.e., what GUST or GUTenberg propose for their members) or application targeted (e.g., XML or Omega).  A preselected scheme can be refined. This is done in the "Main customization" section by choosing additional collections from  "Standard collections" or "Language collections". For example, by clicking the "Select" button near the button labelled "Standard collections" additional collections like documentations in different languages, Metapost or Omega can be selected. A "tick" should mark your selection.
+
+<h4>NOTE:</h4>
+The "Perl" and "Wintools" collections are selected by default and should be installed during TeX Live installation under Windows as they are used by many programs. You may refrain from installing them if they are already installed and you really know what you are doing. If you leave the default, you will be asked during the TL installation process to confirm the installation of Perl. "Ghostscript" and the dvi viewer "dviout" are installed on request.<br><br>  
+The PERL5LIB and/or GS_LIB environment variables will also be set if  Perl and/or Ghostscript will be installed.<br><br>
+Next, clicking the "Select" button labelled  "Language Collections" in the "Main customization" section opens the "Language collections" window in which the installation language can be chosen by ticking the box next to the language.<br><br>
+To start the installation proper, click the "Install" button in the "Install" section. Wait patiently until you see a message reporting a successfully finished installation.<br><br>
+The shortcut for tlpmgui will be added to the Start->Programs->TeXLive 2007 menu. The same  will happen for "dviout" if it was selected for installation.<br><br>
+If it is needed (Win9x/WinME), you will be asked to reboot your computer.
+
+<h3>2 Run from DVD.</h3>
+An additional tab "Run from DVD" shows if tlpmgui is run from the TeX Live DVD. Here one may prepare the system for running live i.e., directly from the DVD. Clicking the "Setup" buttom tells tlpmgui to set environment variables and create formats on the local hard disk.<br><br> 
+Since now TeX Live is ready to use -- the
+only thing to remember is to insert the DVD into the DVD drive.
+
+<h2>3 Maintenance of the TeX Live installation</h2>
+If you have TeX Live installed, you can use tlpmgui along with the TeX Live CD/TeX Collection DVD for modifying and maitaining your installation.<br><br>
+As the tlpmgui shortcut is available in the Start->Programs->TeXLive2007 menu, start it from here. The maintenance window titled "TeX Live installation and maintenance utility" shows. It contains several tabs: "Add Packages", "Remove packages", "Manage installation", "Remove installation".
+
+<h3>3.1 Add packages or Remove packages </h3>
+Click the tab labelled "Add packages" or "Remove packages" to enter the relevant functionality and then:<br><br>
+<b>1.</b> Click the "Search" button in the "Buttons" section to display or refresh in the "Select packages to..." section the list of packages to install or remove.<br>
+When adding packages, the list of installed packages is compared to the list of packages available from your CD/DVD. Only packages not already installed are displayed.<br>
+When removing individual packages, only the list of installed packages will be displayed.<br>
+Please note that for both "Add packages" and "Remove packages" actions the collections are listed first, followed by single packages.<br><br>
+<b>2.</b> Select a package by clicking the name of the package. Selected packages are highlighted. Clicking the "Info" button in the "Buttons" section displays a short description of the selected package in the window located in the "Info on the selected item" section. To select several packages at once hold down one of the Ctrl or Shift keys at your keyboard while holding down the left mouse button or drag the mouse pointer while holding down the left mouse button.<br><br>
+<b>3.</b> Click the "Install" or "Remove" button in the "Buttons" section to perform the appropriate action.<br><br>
+<b>4.</b> To ease package searching, a field is provided in which the first characters of the package name can be entered. The asterisk (*) character may be used to stand for a sequence of characters. The 
+"Next" button scrolls the list to the next position fulfilling the search criteria.
+
+<h3>3.2 Manage the installation</h3>
+The functions available in the tab labelled  "Manage the installation" are helpful in performing actions needed e.g., after a language package, font or format was added, for refreshing the installation database or when packages are added manually (without tlpmgui help).
+
+<h3>3.3 Remove the TeX Live installation</h3>
+The tab labelled "Remove the TeX Live installation" opens a window which contains functionality not worth describing and we do not know who would need it and what it is for... :-)
+
+<h4>Note</h4>
+Under Windows the setuptl directory (containing tlpmgui and related files) will not be deleted. You will have to do it manually.<br><br>
+The texmf-local directory for your local additions will only be deleted if you mark it for the operation in the "Remove the TeX Live installation" window.<br> 
+
+<h2>4 Links</h2>
+More on the  <a href="http://www.tug.org/texlive/doc/texlive-en/live.html">web</a><br>
+
+<h2>5 Run time parameters</h2>
+By default, tlpmgui tries to detect if TeX is installed and depending on the result starts either in installation or maintenance mode.<br>
+<tt>--install-mode</tt>&nbsp;&nbsp;&nbsp;forces installation mode.<br><br>
+Diagnostic information is collected in a log file which is deleted at the end of the run, as are any other temporary files. <br>
+<tt>--debug</tt>&nbsp;&nbsp;&nbsp;displays the names and contents of all tlpmgui temporary files in a separate window.
+
+<h2>6 Changes</h2>
+2005.10.02 GG, TLu<br>
+2005.10.06 20:00 StaW<br>
+2005.10.07 00:50 JBL<br>
+2005.10.09 12:30 JBL<br>
+2005.10.11 21:55 TLu<br>
+2005.10.29 19:40 TLu - html<br>
+2007.02.03 17:05 TLu, JBL<br>
+$Id: helpen.html 335 2007-02-03 23:53:01Z tlu $
+</body>
+</html>

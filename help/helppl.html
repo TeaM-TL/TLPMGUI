@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TeX Live 2007</title>
+<meta http-equiv="Content-type" CONTENT="text/html; charset=utf-8">
+</head>
+.font Helvetica
+.fontsize 10
+.forecolor black
+.backcolor #ffffd2
+.linkcolor #006800
+.buttons "back forw sep stop sep index sep find search sep inc dec"
+.h_topics .*
+.h_ignore <h4.*
+<body>
+<h2>1. Instalacja</h2>
+Po włożeniu płyty do napędu CD-ROM, autostart powinien uruchomić program tlpmgui. Jeśli to nie nastąpi, kliknij menu Start, wybierz polecenie Uruchom, wybierz &lt;litera CD-ROM&gt;:\setuptl\tplmgui.exe (lub &lt;litera DVD&gt;:\texlive\setuptl\tplmgui.exe jeśli instalujesz z płyty TeX Collection DVD), a następnie kliknij OK.<br><br>
+Ukaże się okno instalatora zatytułowane "Program instalacji i konfiguracji TeX Live". Zawiera ono następujące sekcje: "Modyfikacja schematów", "Instalacja", "Wybierz schemat", "Wybierz system", "Katalogi" i "Opcje".<br>
+W sekcji "Katalogi", obok przycisku "CD/DVD" powinien być wyświetlony dysk instalacyjny, np. "F:/" (lub "F:/texlive/" dla DVD). Jeśli tak nie jest, naciśnij przycisk "CD/DVD" i wybierz napęd CD z TeX Live CD (lub katalog "texlive" na TeX Collection DVD).<br><br>
+Za pomocą przycisku "TLroot" możesz wybrać katalog, w którym chcesz zainstalować TeX Live. Wybrany katalog zostanie wpisany do zmiennej środowiskowej TLroot do późniejszego użycia.<br><br>
+W sekcji "Wybierz schemat" należy wybrać odpowiedni schemat instalacyjny TeX Live przez naciśnięcie jednego z dostępnych przycisków radiowych (np. "scheme-gust"). Przy każdym schemacie znajduje się przycisk "Informacje", po naciśnięciu którego wyświetlana jest lista kolekcji zawarta w wybranym schemacie.<br><br>
+Schematy to obszerne zestawy pakietów przeznaczone do wstępnego wyboru instalowanych komponentów. Mamy do wyboru schematy dla podstawowej, przeciętnej i pełnej instalacji, pozostałe przygotowano z myślą o wybranych grupach użytkowników (np. GUST i GUTenberg przygotowały schematy dla swoich członków) lub zastosowaniach (np. XML lub Omega).  Wstępnie wybrane schematy można modyfikować. Dodatkowe kolekcje można wybrać w sekcji "Modyfikacja schematów". Na przykład po naciśnięciu przycisku "Wybierz" obok "Kolekcji standardowych" można wybrać dodatkowe kolekcje, takie jak Metapost, Omega lub dokumentacje w różnych językach. Wybór zaznaczamy haczykiem.<br>
+<h4>Uwaga: </h4>
+Kolekcje "Perl" i "Wintools" są zaznaczone domyślnie i powinny zastać zainstalowane przy instalacji TeX Live pod Windows, ponieważ są wymagane przez wiele programów. Można z nich zrezygnować, gdy masz je już zainstalowane i wiesz, co robisz. Jeśli nie zrezygnujesz z nich, to zostaniesz zapytany podczas instalacji o potwierdzenie instalacji perla. Podobnie Ghostscript i przeglądarka plików DVI "dviout" instalowane są na życzenie.<br><br>
+Ustawiane są także zmienne środowiskowe PERL5LIB i GS_LIB, o ile perl i ghostscript zostały zainstalowane.<br><br>
+W sekcji "Modyfikacja schematów", po przyciśnięciu przycisku "Wybierz" przy "Kolekcjach języków", otwiera się okno, w którym można wybrać do zainstalowania dodatkowe kolekcje językowe. Wybór zaznaczamy haczykiem.<br><br>
+Właściwa instalacja rozpoczyna się po naciśnięciu przycisku "Instalacja".<br><br>
+Zaczekaj cierpliwie aż do pojawienia się komunikatu o pomyślnym zakończeniu instalacji.<br><br>
+Do menu Start->Programs->TeXLive2007 dodawany jest skrót do tlpmgui oraz do przeglądarki plików DVI dviout, o ile została potwierdzona instalacja dviout.<br><br>
+Jeśli to będzie konieczne (Win9x/WinME), będziesz poproszony o ponowne uruchomienie komputera.
+
+<h2>2. Uruchomienie z DVD</h2>
+Przy uruchomieniu z DVD mamy dodatkową zakładkę "Uruchom z DVD". Pozwala ona przygotować TeX Live do pracy wprost z dysku DVD bez instalacji. Po naciśnięciu przycisku "Ustaw" dodawane są zmienne środowiskowe i generowane są formaty na dysku lokalnym.<be><br>
+Od tej chwili można korzystać z TeX Live, pamiętając tylko o włożeniu płyty do napędu DVD.
+
+<h2>3. Administracja i zarządzanie instalacją TeX Live</h2>
+Po zainstalowaniu TeX Live możesz użyć tlpmgui razem z TeX Live CD (lub TeX Collection DVD) do zmian i administracji Twojej instalacji.<br><br>
+<p>Skrót do tlpmgui dostępny jest w menu Start->Programy->TeXLive2007. Okno programu zawiera tym razem następujące zakładki: "Dodawanie pakietów", "Usuwanie pakietów", "Zarządzanie instalacją" i "Odinstalowanie".
+
+<h3>3.1. Dodawanie lub usuwanie pakietów</h3>
+Zakładki "Dodawanie pakietów" lub "Usuwanie pakietów" posiadają następującą funkcjonalność:<br>
+<b>1.</b> W sekcji "Przyciski" naciśnięcie przycisku "Szukaj" wypełnia/odświeża zawartość sekcji "Wybierz pakiety do..." czyli kolekcje i pakiety do instalacji lub usunięcia.<br>
+Podczas dodawania, porównywana jest lista wszystkich pakietów z CD-ROM (lub DVD) z listą uprzednio zainstalowanych. Wyświetlane są tylko niezainstalowane pakiety.<br>
+Przy usuwaniu wyświetlane są tylko już zainstalowane pakiety.<br>
+Proszę zwrócić uwagę, że w obu zakładkach listowane są najpierw kolekcje, a następnie pojedyncze pakiety.<br><br>
+<b>2.</b> Wybierz pakiet przez kliknięcie na jego nazwie. Wybrany pakiet jest podświetlony. Po naciśnięciu przycisku "Informacje" wyświetlany  jest po prawej krótki opis. Dla wielokrotnego wyboru zaznaczaj kolejne elementy na liście, klikając na nie przy uprzednio przyciśniętym klawiszu Ctrl lub Shift. Można zaznaczać również przyciskając lewy klawisz myszy i przeciągając mysz w dół albo w górę.<br><br>
+<b>3.</b> Naciśnij przycisk "Instaluj" lub "Usuń" w sekcji "Przyciski" by wykonać odpowiednie polecenie.<br><br>
+<b>4.</b> Dla ułatwienia wyszukiwania pakietów dostępne jest pole do wpisania pierwszych znaków nazwy. Można korzystać ze znaku gwiazdki *, zastępującego ciag znaków. Przycisk "Następne" przewija listę do następnego, zgodnego z kryteriami pakietu.
+
+<h3>3.2. Zarządzanie instalacją</h3>
+Polecenia dostępne w zakładce "Zarządzanie instalacją" są pomocne przy wykonywaniu czynności po dodaniu pakietów językowych, fontów czy formatów, a także przy odświeżaniu bazy danych instalacji, czy ręcznym dodaniu pakietów (bez pomocy tlpmgui).
+
+<h3>3.3. Odinstalowanie</h3>
+Zakładka "Odinstalowanie" udostępnia polecenie, którego działanie nie jest warte opisu i nie wiadomo komu jest ono potrzebne :-)<br>
+<h4> Uwaga:</h4>
+Pod Windows katalog setuptl (zawierający tlpmgui i związane z nim pliki) nie jest usuwany podczas odinstalowania. Katalog ten należy usunąć samodzielnie.<br><br>
+Katalog texmf-local (zawierający prywatne fonty, makra itp.) usuwany jest tylko w przypadku zaznaczenia haczyka w oknie deinstalacji.<br><br>
+
+<h2>4. Odnośniki</h2>
+Więcej na stronie <a href="http://www.tug.org/texlive/doc/texlive-pl/live.html">TeX Live</a>, i <a href="http://www.gust.org.pl/projects/project_texlive/tlpm">GUST</a>.
+
+<h2>5. Parametry wywołania</h2>
+Domyślnie tlpmgui próbuje wykryć istniejącą instalację TeX-a i uruchamia się automatycznie w trybie instalacji lub administracji.<br>
+<tt>--install-mode</tt> parametr wymusza uruchomienie w trybie instalacji<br><br>
+Podczas pracy informacje diagnostyczne są zapisywane do pliku logu, który po zakończeniu pracy tlpmgui jest usuwany wraz innymi plikami tymczasowymi.<br>
+<tt>--debug</tt> parametr powoduje wyświetlanie nazw i zawartości wszystkich plików tworzonych i zapisywanych przez tlpmgui.<br><br>
+
+<h2>6. Historia zmian</h2>
+2005.10.08 02:15 TLu, GG, SW<br>
+2005.10.09 16:05 TLu wg en<br>
+2005.10.11 01:08 SW<br>
+2007.01.10 21:00 TLu<br>
+2007.02.03 01:00 TLu<br>
+$Id: helppl.html 327 2007-02-03 17:59:01Z tlu $
+</body>
+</html>
