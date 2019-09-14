@@ -1,0 +1,42 @@
+## 2005-2007 Tomasz Luczak tlu@technodat.com.pl
+# $Id: Changelog 350 2007-02-06 11:21:49Z tlu $
+# History:
+# 2005.05.03 TLu r.0.1  start project
+# 2005.08.04 TLu r.0.11 last version for TL2004
+# 2005.10.31 TLu r.1.0  final release for Tex Live 2005
+# 2006.07.09 TLu r.1.39 last version for TL2005
+# 2006.12.24 TLu r.1.40 start for TL2006
+# 2006.12.28 TLu r.1.41 remove windvi support, correct perl path
+# 2006.12.31 TLu r.1.42 fixed GS_LIB path, dviout install, fixed select TLroot under Linux
+# 2006.12.31 TLu r.1.43 preconfigure of dviout
+# 2007.01.01 TLu r.1.44 fixed installation and administration under Linux
+# 2007.01.02 TLu r.1.45 with lion ;-) eol-style LF for msgs and help
+# 2007.01.03 TLu r.1.46 catch missing Xwindow/Windows
+# 2007.01.04 TLu r.1.47 catch more exeptions, improved updmap, add dviout to PATH, recognize TEXLIVE_INSTALL_PREFIX
+# 2007.01.05 TLu r.1.48 bug (Win32) fix if gui started of out TL structure
+# 2007.01.05 TLu r.1.49 fixed ugly bug when scheme no > 9
+# 2007.01.07 TLu r.1.50 add link to tlpmgui into bin/$platform
+# 2007.01.08 TLu r.1.51 improve install under Win98, remove win32 binaries from setuptl under Linux
+# 2007.01.08 TLu r.1.52 improve install under Win98, install dviout requires accept
+# 2007.01.08 TLu r.1.53 improve install GS under Win98
+# 2007.01.10 TLu r.1.54 improve install GS under Win98, TL2007
+# 2007.01.11 TLu r.1.55 clean temp dir (GS (WinNT only), improve dviout config, added Darwin libraries for Tile
+# 2007.01.13 TLu r.1.56 added name of platform to name of tlpmgui, use tlpm-name-of-platform.pl
+# 2007.01.14 TLu r.1.57 Windows: improved remove path from %PATH%, better handling collection-perl
+# 2007.01.15 TLu r.1.58 added x86_64 library for Tile, x86_64 executable, little improve for win98
+# 2007.01.16 TLu r.1.59 improve recognise availables binaries, improve for darwin
+# 2007.01.20 TLu r.1.60 better sorting packages, improved remove from %PATH%
+# 2007.01.22 TLu r.1.61 improved recognise DVD/CD
+# 2007.01.25 TLu r.1.62 improved create updmap.cfg under Linux
+# 2007.01.25 TLu r.1.63 creating updmap.cfg corrected for win32 and linux
+# 2007.01.26 TLu r.1.64 improved run from TeXLive for win32
+# 2007.01.28 TLu r.1.65 improved run from DVD for win32
+# 2007.01.31 TLu r.1.66 debug information, several bug fixed, refresh lists after add/remove pkg
+# 2007.02.01 TLu r.1.67 wider info window, updated *.msgs
+# 2007.02.02 TLu r.1.68 new help engine, updated ini package
+# 2007.02.02 TLu r.1.69 added --install-mode parameter
+# 2007.02.03 TLu r.1.70 added --debug parameter, autorefresh both lists
+# 2007.02.03 TLu r.1.71 full autorefresh, console window for Win32
+# 2007.02.04 TLu r.1.72 resolved problem wrong %Temp%
+# 2007.02.05 TLu r.1.73 improved install perl under win32
+# 2007.02.06 TLu r.1.74 improved Next button and %Temp% with spaces

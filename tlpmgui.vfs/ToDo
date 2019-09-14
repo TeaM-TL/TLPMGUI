@@ -1,0 +1,6 @@
+# $Id: ToDo 323 2007-02-03 12:21:14Z tlu $
+# ToDo:
+# 1. file access error handling
+# 2. remove setup-win32 directory
+# 3. support for "check" command of tlpm
+

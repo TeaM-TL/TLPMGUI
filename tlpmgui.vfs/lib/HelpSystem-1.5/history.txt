@@ -1,0 +1,86 @@
+HelpSystem 1.5
+Copyright (c) 2000-2003 Andrei Gratchev. 
+=====================================================================
+Legend:  [+] added,  [-] removed,  [*] changed,  [!] fixed
+
+----- May 26, 2003 :: version 1.5 -----------------------------------
+[*] ( 8/03/2003) 
+    - Some rare used functions are now in detached files
+[*] (20/11/2002) 
+    - Find dialogs is centered now
+[+] (22/05/2002) 
+    - Improved script support: embedded scripts and dynamic changing 
+      of page
+[+] (13/05/2002) 
+    - Added skipping of text between "<style>" and "</style>" tags
+
+----- April 16, 2002 :: version 1.4 ---------------------------------
+[+] (16/04/2002) 
+    - Added two new directives: ".buttons" and ".controls"
+[+] (14/04/2002) 
+    - Added "Find" engine (local and global)
+[!] ( 5/04/2002) 
+    - Fixed bug with "&#38;" sequence
+[!] ( 4/04/2002) 
+    - The page display was speeded up (thanks to Giovanni Cristelli)
+
+----- April 2, 2002 :: version 1.3 ----------------------------------
+[*] ( 2/04/2002) 
+    - In-line help is updated (thanks to Dave Clews)
+[+] ( 3/03/2002) 
+    - Added two control directives: ".lmargin" and ".rmargin"
+[+] ( 3/03/2002) 
+    - Added parameter 'indent' for "<ul>" and "<ol>" tags
+[+] (21/02/2002) 
+    - Added support of Tcl variables or function calls in ".include" 
+      directive
+[+] ( 6/11/2001) 
+    - Added support of HTML-comments "<!-- -->"
+[+] (28/09/2001) 
+    - Added possibility to invoke a tcl code by click on link
+[+] (17/09/2001) 
+    - Added help2html generator
+[!] (17/09/2001) 
+    - Speed of displaying is improved (up more than five times 
+      on large topics)
+[*] (17/09/2001) 
+    - Processing of special entities is extended
+[!] (20/08/2001) 
+    - Some minor bug fixes (title displaying, optimizing for old 
+      versions of Tcl and etc.)
+[+] (22/02/2001) 
+    - Added many changes written by J.W.Schmitz-Hübsch
+        new parameter width and height in "help:init"
+            defaults are 450 and 400
+        align in section heading h1 ... h6;
+        new line in section heading h2 ... h6;
+        replace special entities of HTML3.2 by characters;
+        show directory when "Topic not found";
+        topic is "filename?topicname#mark";
+        three new control directives
+           ".h2ignore regexp"
+                section headings found by regexp
+                will be ignores in "h4topics" and 
+                "h4contents"
+           ".h4topics regexp"
+                section headings found by regexp
+                will be used as topics
+           ".h4contents regexp" 
+                section headings found by regexp
+                will be used in contents
+           if ".h4contents" is used, then the buttons
+           "Previous", "UpLevel" and "Next" will be shown;
+        create Contents-Topic if section headings found
+        with ".h4contents";
+        append links for lower section headings to topics;
+[!] ( 6/12/2000) 
+    - Corrected help's behavior while modal window exists
+[+] (23/10/2000) 
+    - Added support of new tag "<$ ...>"
+
+----- August 3, 2000 :: version 1.2 ---------------------------------
+[*] (17/06/2000) 
+    - The first public release
+
+---------------------------------------------------------------------
+All bugs reports and your wish send to grand@deversys.com
