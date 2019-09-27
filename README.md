@@ -1,11 +1,11 @@
 # TLPMGUI
 ## Graficzny program instalacyjny dla TeX Live 2007 pozwala na łatwe i sprawne zainstalowanie dystrybucji TeX Live naszego ulubionego systemu w różnych systemach operacyjnych.
 
-![Instalacja](https://github.com/TeaM-TL/TLPMGUI/blob/master/tlpmgui_1.png)
+![Instalacja](https://github.com/TeaM-TL/TLPMGUI/blob/master/screenshots/tlpmgui_1.png)
 
-![Zarządzanie instalacją](https://github.com/TeaM-TL/TLPMGUI/blob/master/tlpmgui_2.png)
+![Zarządzanie instalacją](https://github.com/TeaM-TL/TLPMGUI/blob/master/screenshots/tlpmgui_2.png)
 
-![Pomoc](https://github.com/TeaM-TL/TLPMGUI/blob/master/tlpmgui_3.png)
+![Pomoc](https://github.com/TeaM-TL/TLPMGUI/blob/master/screenshots/tlpmgui_3.png)
 
 ## Repozytorium zawiera źródła TLPMGUI
 
